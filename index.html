@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Homework 4 Charles Towle-->
+<head>
+    <meta charset="UTF-8">
+    <title>CrystalCollector</title>
+    <!--load stylesheets and bootstrape-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    <h1>CrystalCollector!</h1>
+    <!-- Instructions paragraph container-->
+    <div class="parag">
+        <p>
+            You will be given a random number at the start of the game.
+        </p>
+        <p>
+            There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.
+        </p>
+        <p>
+            You win the game by matching your total score to the random number, you lose the game if your total score goes above the
+            random number
+        </p>
+        <p>
+            The value of each crystal is hidden from you until you click on it.
+        </p>
+        <p>
+            Each time when the game starts, the game will change the values of each crystal
+        </p>
+    </div>
+    <!--Number to guess container-->
+    <div class="randomGen">
+        <h2>
+            <span class="numbertoguess">00</span>
+        </h2>
+    </div>
+    <!--Scoreboard container-->
+    <div class="scoreBoard">
+        <h4>Wins:
+            <span class="winspan">0</span>
+            Losses:
+            <span class="lossesspan">0</span>
+        </h4>
+    </div>
+    <!--Win/loss container-->
+    <div class="winsLosses"></div>
+    <!--Crystal images multiple classes-->
+    <img src="assets/images/dia.png" class="diamond gem" alt="diamond">
+    <img src="assets/images/opal.png" class="opal gem" alt="opal">
+    <img src="assets/images/jade.jpg" class="jade gem" alt="jade">
+    <img src="assets/images/ruby.png" class="ruby gem" alt="ruby">
+    <!--Total score heading-->
+    <h3>Your total score is:</h3>
+    <h4 class="totalscore">0</h4>
+    <!--load script-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+    <script type="text/javascript" src="assets/crystal.js"></script>
+</body>
+</html>
